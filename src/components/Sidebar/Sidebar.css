@@ -1,0 +1,20 @@
+/* Sidebar.css */
+
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    height: calc(100% - 70px);
+    width: 20%; /* Set width to 30% of the screen */
+    background-color: #333;
+    z-index: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hide sidebar on smaller screens */
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  }
+  

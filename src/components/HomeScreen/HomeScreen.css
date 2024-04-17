@@ -1,0 +1,45 @@
+/* HomeScreen.css */
+
+.home-container {
+    padding: 20px;
+    /* margin-left: 400px; */
+  }
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .option {
+    flex: 0 0 calc(50% - 20px); /* Two columns for mobile */
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 15vw;
+    /* border: solid rgb(105, 105, 105) 1px; */
+  }
+  
+  .option img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .option span {
+    display: block;
+  }
+  
+  /* Media Query for larger screens */
+  @media screen and (min-width: 768px) {
+    .option {
+      flex: 0 0 calc(25% - 20px);
+      margin-bottom: 10vw;
+    }
+
+    .home-container {
+        padding: 20px;
+        /* margin-left: 500px; */
+        margin-top: 100px;
+      }
+  }
+  

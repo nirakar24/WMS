@@ -1,0 +1,27 @@
+/* Header.css */
+
+.header {
+    background-color: #B2EBF2; /* Primary color */
+    color: #333; /* Dark text color */
+    padding: 10px 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1100;
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust the width of the logo */
+  }
+  
+  .navigation a {
+    color: #333; /* Dark text color */
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+  

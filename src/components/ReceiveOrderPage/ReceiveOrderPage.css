@@ -1,0 +1,60 @@
+/* ReceiveOrderPage.css */
+
+.receive-order-container {
+    display: flex;
+    flex-direction: column; /* For mobile, arrange options in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Set height to fill the viewport */
+  }
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Add spacing between options */
+    width: 100%;
+  }
+  
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    flex: 1; /* Take up equal space within the flex container */
+    font-size: 23px;
+  }
+  
+  .option-icon {
+    font-size: 65px; /* Adjust icon size */
+    margin-bottom: 10px; /* Add space between icon and text */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 767px) {
+    .options {
+      flex-direction: column; /* Arrange options in a column */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .option {
+      margin-bottom: 20px; /* Add space between options */
+    }
+  }
+  
+  /* Media query for larger screens */
+  @media screen and (min-width: 768px) {
+    .receive-order-container {
+      align-items: stretch; /* Stretch items to fill container horizontally */
+    }
+  
+    .options {
+      flex-direction: row; /* Arrange options in a row */
+    }
+  
+    .option {
+      flex-basis: calc(33.33% - 20px); /* Three columns */
+      max-width: calc(33.33% - 20px); /* Limit width for three columns */
+    }
+  }
+  
